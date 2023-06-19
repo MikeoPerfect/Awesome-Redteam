@@ -75,9 +75,9 @@
     - [综合工具](#综合工具-2)
     - [小程序](#小程序)
     - [APK](#apk)
-  - [大数据 / 云存储](#大数据--云存储)
-    - [开源资源](#开源资源-1)
-    - [靶机平台](#靶机平台-2)
+  - [云安全](#云安全)
+    - [云安全矩阵](#云安全矩阵)
+    - [云上靶场](#云上靶场)
     - [综合工具](#综合工具-3)
   - [开源蜜罐](#开源蜜罐)
   - [容器安全](#容器安全)
@@ -124,7 +124,6 @@
 - 内网渗透-隐藏：[Click Here](https://github.com/Threekiii/Awesome-Redteam/blob/master/tips/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F-%E9%9A%90%E8%97%8F.md)
 - 红队中易被攻击的一些重点系统漏洞整理（来源：棱角安全团队）：[Click Here](https://github.com/Threekiii/Awesome-Redteam/blob/master/tips/%E7%BA%A2%E9%98%9F%E4%B8%AD%E6%98%93%E8%A2%AB%E6%94%BB%E5%87%BB%E7%9A%84%E4%B8%80%E4%BA%9B%E9%87%8D%E7%82%B9%E7%B3%BB%E7%BB%9F%E6%BC%8F%E6%B4%9E%E6%95%B4%E7%90%86.md)
 - 网络攻击与防御图谱：[Click Here](https://github.com/Threekiii/Awesome-Redteam/blob/master/tips/%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB%E4%B8%8E%E9%98%B2%E5%BE%A1%E5%9B%BE%E8%B0%B1.svg) 
-- 云上攻防：[Click Here](https://github.com/Threekiii/Awesome-Redteam/blob/master/tips/%E4%BA%91%E4%B8%8A%E6%94%BB%E9%98%B2.md)
 - Webshell流量分析：[Click Here](https://github.com/Threekiii/Awesome-Redteam/blob/master/tips/Webshell%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90.md)
 
 ### 服务搭建-Docs
@@ -560,22 +559,31 @@
 
 - Apktool：Android apk逆向 https://github.com/iBotPeaches/Apktool
 
-## 大数据 / 云存储
+## 云安全
 
-### 开源资源
+### 云安全矩阵
 
-- ATT&CK Cloud矩阵：https://attack.mitre.org/matrices/enterprise/cloud/
+- ATT&CK Cloud Matrix：https://attack.mitre.org/matrices/enterprise/cloud/
+- 火线安全-云服务攻防矩阵 https://cloudsec.huoxian.cn/
+- 腾讯云鼎实验室-云安全攻防矩阵 https://cloudsec.tencent.com/home/
 
-### 靶机平台
+### 云上靶场
 
+- Metarget：https://github.com/Metarget/metarget
+- Attack Defense：付费 https://attackdefense.pentesteracademy.com/listing?labtype=cloud-services&subtype=cloud-services-amazon-s3
 - AWSGoat：https://github.com/ine-labs/AWSGoat
-- TerraformGoat：https://github.com/HuoCorp/TerraformGoat
+- TerraformGoat：火线云环境攻防靶场 https://github.com/HuoCorp/TerraformGoat
+- Kubernetes Goat：https://github.com/madhuakula/kubernetes-goat
+- CloudGoat：https://github.com/RhinoSecurityLabs/cloudgoat
 
 ### 综合工具
 
 - aliyun-accesskey-Tools：阿里云accesskey利用工具 https://github.com/mrknow001/aliyun-accesskey-Tools
 - cosbrowser：腾讯云COS客户端 https://github.com/TencentCloud/cosbrowser
 - 行云管家：云存储图形化管理平台 https://yun.cloudbility.com/
+- CF：云环境利用框架 https://github.com/teamssix/cf
+- CDK：容器渗透工具集 https://github.com/cdk-team/CDK
+- Awesome Container Escape：容器逃逸 https://github.com/brant-ruan/awesome-container-escape
 
 ## 开源蜜罐
 
