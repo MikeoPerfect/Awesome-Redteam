@@ -407,6 +407,10 @@
 - JNDIExploit：功能更强 冰蝎内存马 https://github.com/WhiteHSBG/JNDIExploit
 - wscat：Websocket测试工具 https://github.com/websockets/wscat
 
+### 数据库
+
+- RedisStudio：Redis 未授权 https://github.com/cinience/RedisStudio 
+
 ### 信息泄露
 
 - GitHack：.git泄露利用脚本 https://github.com/lijiejie/GitHack python3 有时无法恢复.git目录，推荐python2版本
@@ -446,6 +450,9 @@
 - SpringBoot-Scan：https://github.com/AabyssZG/SpringBoot-Scan
 - SpringBoot-Scan-GUI：SpringBoot-Scan的GUI图形化版本 https://github.com/13exp/SpringBoot-Scan-GUI
 - SpringBootVulExploit：https://github.com/LandGrey/SpringBootVulExploit
+- heapdump_tool：heapdump敏感信息查询工具 https://github.com/wyzxxz/heapdump_tool 
+- JDumpSpider：HeapDump敏感信息提取工具 https://github.com/whwlsfb/JDumpSpider
+- Memory Analyzer：HeapDump分析工具 https://www.eclipse.org/mat/previousReleases.php
 
 ### Thinkphp
 
