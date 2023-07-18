@@ -304,6 +304,7 @@
 - Weakpass：在线弱密码生成工具部署 https://github.com/zzzteph/weakpass
 - Weakpass：在线子域名生成工具部署 https://github.com/zzzteph/probable_subdomains
 - pydictor：一个强大实用的黑客暴力破解字典建立工具 https://github.com/LandGrey/pydictor/
+- 汉字转拼音：https://www.aies.cn/pinyin.htm
 
 #### 默认口令查询
 
@@ -409,7 +410,8 @@
 
 ### 数据库
 
-- RedisStudio：Redis 未授权 https://github.com/cinience/RedisStudio 
+- RedisStudio：Redis 未授权 https://github.com/cinience/RedisStudio
+- mysql-fake-server：MySQL JDBC 客户端 Java 反序列化漏洞利用 https://github.com/4ra1n/mysql-fake-server
 
 ### 信息泄露
 
@@ -432,6 +434,10 @@
 - DruidCrack：Druid密文解密工具 https://github.com/rabbitmask/DruidCrack
 
 - druid_sessions：Druid sessions利用工具 https://github.com/yuyan-sec/druid_sessions
+
+### Etcd
+
+- etcd：etcdctl https://github.com/etcd-io/etcd
 
 ### Shiro
 
@@ -469,6 +475,11 @@
 ### Vcenter
 
 - VcenterKiller：针对Vcenter的综合利用工具 https://github.com/Schira4396/VcenterKiller
+
+### Zookeeper
+
+- ZooInspector：ZooKeeper 客户端监控软件 https://issues.apache.org/jira/secure/attachment/12436620/ZooInspector.zip
+- apache-zookeeper：zkCli.sh 客户端命令连接 https://archive.apache.org/dist/zookeeper/zookeeper-3.5.6/
 
 ### CMS / OA
 
