@@ -52,15 +52,21 @@
     - [综合工具](#综合工具-1)
   - [漏洞利用](#漏洞利用)
     - [辅助工具](#辅助工具)
+    - [数据库](#数据库)
     - [信息泄露](#信息泄露)
     - [操作系统](#操作系统)
     - [Druid](#druid)
+    - [Etcd](#etcd)
+    - [Java](#java)
+    - [Redis](#redis)
     - [Shiro](#shiro)
     - [Struts](#struts)
-    - [Springboot](#springboot)
+    - [Spring](#spring)
+    - [Tomcat](#tomcat)
     - [Thinkphp](#thinkphp)
     - [Weblogic](#weblogic)
     - [Vcenter](#vcenter)
+    - [Zookeeper](#zookeeper)
     - [CMS / OA](#cms--oa)
     - [Payload / Bypass](#payload--bypass)
   - [内网渗透](#内网渗透)
@@ -92,7 +98,7 @@
   - [先mark待测试项目](#先mark待测试项目)
   - [使用姿势](#使用姿势)
     - [如何在Windows上使用alias](#如何在windows上使用alias)
-    - [如何通过.bat运行conda环境下python文件](#如何通过.bat运行conda环境下python文件)
+    - [如何通过.bat运行conda环境下python文件](#如何通过bat运行conda环境下python文件)
     - [如何使用浏览器快速查看markdown文档](#如何使用浏览器快速查看markdown文档)
 
 
@@ -439,6 +445,17 @@
 
 - etcd：etcdctl https://github.com/etcd-io/etcd
 
+### Java
+
+- jdwp-shellifier：python2 https://github.com/IOActive/jdwp-shellifier
+- jdwp-shellifier：https://github.com/Lz1y/jdwp-shellifier
+- attackRmi：https://github.com/A-D-Team/attackRmi
+
+### Redis
+
+- redis-rogue-server：Redis未授权访问 https://github.com/n0b0dyCN/redis-rogue-server
+- redis-rce：Redis未授权访问 https://github.com/Ridter/redis-rce
+
 ### Shiro
 
 - shiro_attack：https://github.com/j1anFen/shiro_attack
@@ -451,14 +468,21 @@
 
 - Struts2VulsTools：https://github.com/shack2/Struts2VulsTools
 
-### Springboot
+### Spring
 
 - SpringBoot-Scan：https://github.com/AabyssZG/SpringBoot-Scan
 - SpringBoot-Scan-GUI：SpringBoot-Scan的GUI图形化版本 https://github.com/13exp/SpringBoot-Scan-GUI
+- Spring_All_Reachable：Spring Cloud Gateway命令执行 CVE-2022-22947、Spring Cloud Function SpEL 远程代码执行 CVE-2022-22963 https://github.com/savior-only/Spring_All_Reachable
 - SpringBootVulExploit：https://github.com/LandGrey/SpringBootVulExploit
+- swagger-exp：Swagger REST API 信息泄露利用工具 https://github.com/lijiejie/swagger-exp
 - heapdump_tool：heapdump敏感信息查询工具 https://github.com/wyzxxz/heapdump_tool 
 - JDumpSpider：HeapDump敏感信息提取工具 https://github.com/whwlsfb/JDumpSpider
 - Memory Analyzer：HeapDump分析工具 https://www.eclipse.org/mat/previousReleases.php
+
+### Tomcat
+
+- CVE-2020-1938：https://github.com/YDHCUI/CNVD-2020-10487-Tomcat-Ajp-lfi
+- ClassHound：https://github.com/LandGrey/ClassHound
 
 ### Thinkphp
 
