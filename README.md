@@ -41,6 +41,7 @@
       - [字典生成](#字典生成)
       - [默认口令查询](#默认口令查询)
     - [社会工程学](#社会工程学)
+    - [公众号/小程序](#公众号小程序)
     - [浏览器](#浏览器)
     - [综合工具](#综合工具)
   - [漏洞研究](#漏洞研究)
@@ -82,9 +83,10 @@
     - [小程序](#小程序)
     - [APK](#apk)
   - [云安全](#云安全)
+    - [云安全资源](#云安全资源)
     - [云安全矩阵](#云安全矩阵)
     - [云上靶场](#云上靶场)
-    - [综合工具](#综合工具-3)
+    - [AK/SK](#aksk)
   - [开源蜜罐](#开源蜜罐)
   - [容器安全](#容器安全)
   - [必备工具](#必备工具)
@@ -100,6 +102,7 @@
     - [如何在Windows上使用alias](#如何在windows上使用alias)
     - [如何通过.bat运行conda环境下python文件](#如何通过bat运行conda环境下python文件)
     - [如何使用浏览器快速查看markdown文档](#如何使用浏览器快速查看markdown文档)
+
 
 
 ## 项目导航
@@ -265,14 +268,14 @@
 ### 指纹识别
 
 - Wapplyzer：Chrome插件 跨平台网站分析工具 https://github.com/AliasIO/Wappalyzer
-- TideFinger：提取了多个开源指纹识别工具的规则库并进行了规则重组 https://github.com/TideSec/TideFinger
+- Finger：一款红队在大量的资产中存活探测与重点攻击系统指纹探测工具 https://github.com/EASY233/Finger
 - EHole：红队重点攻击系统指纹探测工具 https://github.com/EdgeSecurityTeam/EHole
+- ObserverWard：web 指纹识别 https://github.com/0x727/ObserverWard
+- TideFinger：提取了多个开源指纹识别工具的规则库并进行了规则重组 https://github.com/TideSec/TideFinger
 - fingerprint：各种工具指纹收集分享 https://github.com/r0eXpeR/fingerprint
 - Dismap：tcp/udp/tls 协议指纹和 4500+ Web 指纹规则 https://github.com/zhzyker/dismap
-- Finger：一款红队在大量的资产中存活探测与重点攻击系统指纹探测工具 https://github.com/EASY233/Finger
 - 御剑web指纹识别程序：https://www.webshell.cc/4697.html
 - 云悉指纹识别：http://www.yunsee.cn/
-
 - identYwaf：WAF识别工具 https://github.com/stamparm/identYwaf
 
 ### 扫描/爆破
@@ -328,10 +331,15 @@
 ### 社会工程学
 
 - Hunter：Chrome插件 查找网页暴露邮箱 https://hunter.io/chrome
+- Phonebook：邮箱地址搜索 https://phonebook.cz
 - Skymem：邮箱地址搜索 https://www.skymem.info/
 - 搜邮箱：邮箱域名搜索 https://souyouxiang.com/find-contact/
 - gophish：钓鱼邮件 https://github.com/gophish/gophish
 - SpoofWeb：一键部署HTTPS钓鱼网站 https://github.com/5icorgi/SpoofWeb
+
+### 公众号/小程序
+
+- 小蓝本：https://www.xiaolanben.com/
 
 ### 浏览器
 
@@ -343,6 +351,7 @@
 - Kunyu：https://github.com/knownsec/Kunyu
 - OneForAll：https://github.com/shmilylty/OneForAll
 - ShuiZe：https://github.com/0x727/ShuiZe_0x727
+- FofaX：https://github.com/xiecat/fofax
 - Fofa Viewer：https://github.com/wgpsec/fofa_viewer
 - Fofa GUI：https://github.com/bewhale/FOFA_GUI
 - fscan：内网综合扫描工具 https://github.com/shadow1ng/fscan
@@ -603,6 +612,14 @@
 
 ## 云安全
 
+### 云安全资源
+
+- TeamsSix 云安全资源：https://github.com/teamssix/awesome-cloud-security
+- 云安全知识文库：https://wiki.teamssix.com/
+- 阿里云OpenAPI：https://next.api.aliyun.com/api/
+- 云原生全景图：https://landscape.cncf.io/
+- 云服务漏洞库：https://www.cloudvulndb.org/
+
 ### 云安全矩阵
 
 - ATT&CK Cloud Matrix：https://attack.mitre.org/matrices/enterprise/cloud/
@@ -618,14 +635,16 @@
 - Kubernetes Goat：https://github.com/madhuakula/kubernetes-goat
 - CloudGoat：https://github.com/RhinoSecurityLabs/cloudgoat
 
-### 综合工具
+### AK/SK
 
-- aliyun-accesskey-Tools：阿里云accesskey利用工具 https://github.com/mrknow001/aliyun-accesskey-Tools
+- CF：云环境利用框架 https://github.com/teamssix/cf
+- aksk_tool：https://github.com/wyzxxz/aksk_tool
+- aliyun-accesskey-Tools：阿里云图形化利用工具 https://github.com/mrknow001/aliyun-accesskey-Tools
+- alicloud-tools：阿里云利用工具https://github.com/iiiusky/alicloud-tools
+- oss-browser：阿里云OSS客户端 https://github.com/aliyun/oss-browser
 - cosbrowser：腾讯云COS客户端 https://github.com/TencentCloud/cosbrowser
 - 行云管家：云存储图形化管理平台 https://yun.cloudbility.com/
-- CF：云环境利用框架 https://github.com/teamssix/cf
-- CDK：容器渗透工具集 https://github.com/cdk-team/CDK
-- Awesome Container Escape：容器逃逸 https://github.com/brant-ruan/awesome-container-escape
+- kodo-browser：七牛对象存储图形化管理工具 https://github.com/qiniu/kodo-browser
 
 ## 开源蜜罐
 
@@ -635,6 +654,7 @@
 
 - CDK：容器渗透 https://github.com/cdk-team/CDK
 - veinmind-tools：容器安全工具集 https://github.com/chaitin/veinmind-tools
+- Awesome Container Escape：容器逃逸 https://github.com/brant-ruan/awesome-container-escape
 
 ## 必备工具
 
@@ -671,11 +691,12 @@
 ### Chrome Extensions
 
 - Proxy SwitchyOmega：快速切换代理 https://github.com/FelisCatus/SwitchyOmega
+- serp-analyzer：识别域名/IP信息 https://leadscloud.github.io/serp-analyzer/
+- FindSomething：在网页的源代码或js中寻找有用信息 https://github.com/ResidualLaugh/FindSomething
+- Hack Bar：渗透神器No.1 https://github.com/0140454/hackbar
 - Wappalyzer：识别网站技术/框架/语言 https://www.wappalyzer.com/
 - EditThisCookie：修改Cookie https://www.editthiscookie.com/
-- FindSomething：在网页的源代码或js中寻找有用信息 https://github.com/ResidualLaugh/FindSomething
 - Disable JavaScript：禁用JavaScript绕过弹窗 https://github.com/dpacassi/disable-javascript
-- Hack Bar：渗透神器No.1 https://github.com/0140454/hackbar
 - Heimdallr：被动监听的谷歌插件，用于高危指纹识别、蜜罐特征告警和拦截、机器特征对抗 https://github.com/graynjo/Heimdallr
 - immersive-translate：翻译插件 https://github.com/immersive-translate/immersive-translate/
 - json-formatter：Json格式化插件 https://github.com/callumlocke/json-formatter
