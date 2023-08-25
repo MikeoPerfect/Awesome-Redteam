@@ -103,8 +103,6 @@
     - [如何通过.bat运行conda环境下python文件](#如何通过bat运行conda环境下python文件)
     - [如何使用浏览器快速查看markdown文档](#如何使用浏览器快速查看markdown文档)
 
-
-
 ## 项目导航
 
 ### 速查文档-CheatSheets
@@ -459,6 +457,10 @@
 ### Nacos
 
 - https://github.com/c0olw/NacosRce/
+
+### Nps
+
+- nps-auth-bypass：nps认证绕过利用工具 https://github.com/carr0t2/nps-auth-bypass
 
 ### Java
 
