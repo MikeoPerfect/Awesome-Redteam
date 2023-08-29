@@ -117,13 +117,17 @@
 - Apache项目及漏洞指纹速查：[Click Here](https://github.com/Threekiii/Awesome-Redteam/blob/master/cheatsheets/Apache%E9%A1%B9%E7%9B%AE%E5%8F%8A%E6%BC%8F%E6%B4%9E%E6%8C%87%E7%BA%B9%E9%80%9F%E6%9F%A5.md) 
 - OWASP TOP10 2017/2021：[Click Here](https://github.com/Threekiii/Awesome-Redteam/blob/master/cheatsheets/OWASP%20TOP10.md) 
 
-### 一些代码-Scripts
+### 一些代码-Scripts 
 
-- ShellcodeWrapper：[Click Here](https://github.com/Threekiii/Awesome-Redteam/tree/master/scripts/ShellcodeWrapper) 
-- AntivirusScanner：杀软进程检测脚本 [Click Here](https://github.com/Threekiii/Awesome-Redteam/tree/master/scripts/AntivirusScanner) 
-- runtime-exec-payloads.html：java.lang.Runtime.exec() Payloads生成 [Click Here](https://github.com/Threekiii/Awesome-Redteam/blob/master/scripts/runtime-exec-payloads.html) 
-- Ascii2Char：ASCII码和字符互相转换脚本 修改webshell文件名密码 [Click Here](https://github.com/Threekiii/Awesome-Redteam/blob/master/scripts/Ascii2Char.py) 
-- Weakpass_Generator：在线弱密码生成工具 汉化版 [Click Here](https://github.com/Threekiii/Awesome-Redteam/blob/master/scripts/Weakpass_Generator) 
+ [Click Here](https://github.com/Threekiii/Awesome-Redteam/blob/master/scripts/)
+
+- ShellcodeWrapper：Shellcode加密
+- AntivirusScanner：杀软进程检测脚本
+- runtime-exec-payloads.html：java.lang.Runtime.exec() Payloads生成 
+- Ascii2Char：ASCII码和字符互相转换脚本 修改webshell文件名密码 
+- Weakpass_Generator：在线弱密码生成工具 汉化版
+- Godzilla_Decryptor：哥斯拉流量解密脚本
+- Flask_Session_Decryptor：Flask session注入解密脚本
 
 ### 攻防知识-Tips
 
@@ -706,6 +710,7 @@
 - EditThisCookie：修改Cookie https://www.editthiscookie.com/
 - Disable JavaScript：禁用JavaScript绕过弹窗 https://github.com/dpacassi/disable-javascript
 - Heimdallr：被动监听的谷歌插件，用于高危指纹识别、蜜罐特征告警和拦截、机器特征对抗 https://github.com/graynjo/Heimdallr
+- anti-honeypot：蜜罐识别 https://github.com/cnrstar/anti-honeypot
 - immersive-translate：翻译插件 https://github.com/immersive-translate/immersive-translate/
 - json-formatter：Json格式化插件 https://github.com/callumlocke/json-formatter
 
