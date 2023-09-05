@@ -8,7 +8,6 @@
 - [重要端口及服务速查](https://github.com/Threekiii/Awesome-Redteam/blob/master/cheatsheets/%E9%87%8D%E8%A6%81%E7%AB%AF%E5%8F%A3%E5%8F%8A%E6%9C%8D%E5%8A%A1%E9%80%9F%E6%9F%A5.md)
 
 ## 目录
-
 - [Awesome-Redteam](#awesome-redteam)
   - [快速导航](#快速导航)
   - [目录](#目录)
@@ -58,6 +57,8 @@
     - [操作系统](#操作系统)
     - [Druid](#druid)
     - [Etcd](#etcd)
+    - [Nacos](#nacos)
+    - [Nps](#nps)
     - [Java](#java)
     - [Redis](#redis)
     - [Shiro](#shiro)
@@ -102,6 +103,7 @@
     - [如何在Windows上使用alias](#如何在windows上使用alias)
     - [如何通过.bat运行conda环境下python文件](#如何通过bat运行conda环境下python文件)
     - [如何使用浏览器快速查看markdown文档](#如何使用浏览器快速查看markdown文档)
+
 
 ## 项目导航
 
@@ -366,6 +368,7 @@
 - FofaX：https://github.com/xiecat/fofax
 - Fofa Viewer：https://github.com/wgpsec/fofa_viewer
 - Fofa GUI：https://github.com/bewhale/FOFA_GUI
+- kscan：综合扫描 https://github.com/lcvvvv/kscan
 - fscan：内网综合扫描工具 https://github.com/shadow1ng/fscan
 - hping3：端口扫描 高速 发包量少 结果准确无蜜罐 https://github.com/antirez/hping
 - ENScan_GO：国内企业信息收集 https://github.com/wgpsec/ENScan_GO
@@ -470,7 +473,8 @@
 
 ### Nacos
 
-- https://github.com/c0olw/NacosRce/
+- NacosRce：Nacos Hessian 反序列化 https://github.com/c0olw/NacosRce/
+- nacosleak：获取nacos中配置文件信息 https://github.com/a1phaboy/nacosleak
 
 ### Nps
 
