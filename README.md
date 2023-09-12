@@ -431,14 +431,15 @@
 ### 辅助工具
 
 - ysoserial：Java反序列化 https://github.com/frohoff/ysoserial
+- JYso：jndi注入 反溯源 https://github.com/qi4L/JYso
+- JNDI-Injection-Exploit：https://github.com/welk1n/JNDI-Injection-Exploit
+- JNDIExploit：功能更强 冰蝎内存马 https://github.com/WhiteHSBG/JNDIExploit
+- wscat：Websocket测试工具 https://github.com/websockets/wscat
 - Ceye DNS：在线平台 Dnslog http://ceye.io/
 - Dnslog：在线平台 Dnslog http://dnslog.cn/
 - Fuzz.Red：在线平台 Dnslog https://github.com/AlphabugX/Alphalog
 - DNS重绑定：https://lock.cmpxchg8b.com/rebinder.html
 - DNSLog-GO：自建私有平台 https://github.com/lanyi1998/DNSlog-GO
-- JNDI-Injection-Exploit：https://github.com/welk1n/JNDI-Injection-Exploit
-- JNDIExploit：功能更强 冰蝎内存马 https://github.com/WhiteHSBG/JNDIExploit
-- wscat：Websocket测试工具 https://github.com/websockets/wscat
 
 ### 数据库
 
