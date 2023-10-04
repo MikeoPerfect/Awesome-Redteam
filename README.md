@@ -78,9 +78,11 @@
     - [内网穿透](#内网穿透)
     - [密码提取](#密码提取)
     - [其他](#其他-1)
+  - [攻击研判](#攻击研判)
+    - [综合工具](#综合工具-2)
   - [逆向分析](#逆向分析)
     - [靶机平台](#靶机平台-1)
-    - [综合工具](#综合工具-2)
+    - [综合工具](#综合工具-3)
     - [小程序](#小程序)
     - [APK](#apk)
   - [云安全](#云安全)
@@ -90,6 +92,7 @@
     - [AK/SK](#aksk)
   - [开源蜜罐](#开源蜜罐)
   - [容器安全](#容器安全)
+  - [OPSEC](#opsec)
   - [必备工具](#必备工具)
     - [命令行](#命令行)
     - [Metasploit](#metasploit)
@@ -103,6 +106,7 @@
     - [如何在Windows上使用alias](#如何在windows上使用alias)
     - [如何通过.bat运行conda环境下python文件](#如何通过bat运行conda环境下python文件)
     - [如何使用浏览器快速查看markdown文档](#如何使用浏览器快速查看markdown文档)
+
 
 
 ## 项目导航
@@ -313,6 +317,7 @@
 #### 扫描/爆破字典
 
 - SecLists：46.4k star 项目 https://github.com/danielmiessler/SecLists
+- SecDictionary：配合fuff使用 https://github.com/SexyBeast233/SecDictionary
 - Dictionary-Of-Pentesting：渗透测试、SRC漏洞挖掘、爆破、Fuzzing等常用字典 https://github.com/insightglacier/Dictionary-Of-Pentesting
 - fuzzDicts：Web渗透Fuzz字典 https://github.com/TheKingOfDuck/fuzzDicts
 - Web-Fuzzing-Box：Web 模糊测试字典与Payloads https://github.com/gh0stkey/Web-Fuzzing-Box
@@ -494,6 +499,7 @@
 
 ### Shiro
 
+- Shiro rememberMe 在线解密：https://vulsee.com/tools/shiroDe/shiroDecrypt.html
 - shiro_attack：https://github.com/j1anFen/shiro_attack
 - shiro_rce_tool：https://github.com/wyzxxz/shiro_rce_tool
 - ShiroExploit：https://github.com/feihong-cs/ShiroExploit-Deprecated
@@ -607,11 +613,18 @@
 - Responder：实现获取NTLM Hash等功能 https://github.com/SpiderLabs/Responder
 - HackBrowserData：浏览器数据导出工具 https://github.com/moonD4rk/HackBrowserData
 - Sunflower_get_Password：针对向日葵的识别码和验证码提取工具 https://github.com/wafinfo/Sunflower_get_Password
+- how-does-Xmanager-encrypt-password：Xmanager 密码解密 https://github.com/HyperSine/how-does-Xmanager-encrypt-password
 
 ### 其他
 
 - Impacket：其中的psexec.py通过用户名和密码远程连接到目标服务器 https://github.com/SecureAuthCorp/impacket
 - PsTools：PsExec.exe功能同Impacket中的psexec.py https://docs.microsoft.com/en-us/sysinternals/downloads/pstools
+
+## 攻击研判
+
+### 综合工具
+
+- BlueTeamTools：https://github.com/abc123info/BlueTeamTools
 
 ## 逆向分析
 
@@ -683,6 +696,10 @@
 - CDK：容器渗透 https://github.com/cdk-team/CDK
 - veinmind-tools：容器安全工具集 https://github.com/chaitin/veinmind-tools
 - Awesome Container Escape：容器逃逸 https://github.com/brant-ruan/awesome-container-escape
+
+## OPSEC
+
+- OPSEC-Tradecraft：https://github.com/WesleyWong420/OPSEC-Tradecraft
 
 ## 必备工具
 
