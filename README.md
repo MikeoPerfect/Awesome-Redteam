@@ -67,7 +67,7 @@
     - [Tomcat](#tomcat)
     - [Thinkphp](#thinkphp)
     - [Weblogic](#weblogic)
-    - [Vcenter](#vcenter)
+    - [vSphere](#vSphere)
     - [Zookeeper](#zookeeper)
     - [CMS / OA](#cms--oa)
     - [Payload / Bypass](#payload--bypass)
@@ -94,6 +94,7 @@
     - [云上靶场](#云上靶场)
     - [AK/SK](#aksk)
   - [虚拟化安全](#虚拟化安全)
+  - [移动端安全](#移动端安全)
   - [开源蜜罐](#开源蜜罐)
   - [OPSEC](#opsec)
   - [必备工具](#必备工具)
@@ -482,6 +483,7 @@
 
 - NacosRce：Nacos Hessian 反序列化 https://github.com/c0olw/NacosRce/
 - nacosleak：获取nacos中配置文件信息 https://github.com/a1phaboy/nacosleak
+- nacosScan：jwt硬编码、api未授权添加用户、配置读取 https://github.com/Whoopsunix/nacosScan
 
 ### Nps
 
@@ -539,9 +541,10 @@
 - weblogicScanner：https://github.com/0xn0ne/weblogicScanner
 - weblogic-framework：https://github.com/sv3nbeast/weblogic-framework
 
-### Vcenter
+### vSphere
 
 - VcenterKiller：针对Vcenter的综合利用工具 https://github.com/Schira4396/VcenterKiller
+- VcenterKit：Vcenter综合渗透利用工具包 https://github.com/W01fh4cker/VcenterKit
 
 ### Zookeeper
 
@@ -612,8 +615,9 @@
 - NPS：通过web端管理，无需配置文件 https://github.com/ehang-io/nps
 - FRP：55k star项目 https://github.com/fatedier/frp
 - Neo-reGeorg：tunnel快速部署 https://github.com/L-codes/Neo-reGeorg
-- Viper：图形化内网渗透 https://github.com/FunnyWolf/Viper
+- rakshasa：多级代理内网穿透工具 https://github.com/Mob2003/rakshasa
 - Stowaway：多级代理 https://github.com/ph4ntonn/Stowaway
+- Viper：图形化内网渗透 https://github.com/FunnyWolf/Viper
 - Proxifier：windows代理工具 https://www.proxifier.com/
 - Proxychains：kali代理工具 https://github.com/haad/proxychains
 - iodine：dns隧道 https://github.com/yarrick/iodine
@@ -630,8 +634,8 @@
 
 ### 其他
 
-- Impacket：其中的psexec.py通过用户名和密码远程连接到目标服务器 https://github.com/SecureAuthCorp/impacket
-- PsTools：PsExec.exe功能同Impacket中的psexec.py https://docs.microsoft.com/en-us/sysinternals/downloads/pstools
+- Impacket：https://github.com/SecureAuthCorp/impacket
+- PsTools：https://docs.microsoft.com/en-us/sysinternals/downloads/pstools
 
 ## 攻击研判
 
@@ -699,12 +703,18 @@
 - cosbrowser：腾讯云COS客户端 https://github.com/TencentCloud/cosbrowser
 - 行云管家：云存储图形化管理平台 https://yun.cloudbility.com/
 - kodo-browser：七牛对象存储图形化管理工具 https://github.com/qiniu/kodo-browser
+- cloudSec：云平台AK/SK-WEB利用工具 https://github.com/libaibaia/cloudSec
 
 ## 虚拟化安全
 
 - CDK：容器渗透 https://github.com/cdk-team/CDK
 - veinmind-tools：容器安全工具集 https://github.com/chaitin/veinmind-tools
 - Awesome Container Escape：容器逃逸 https://github.com/brant-ruan/awesome-container-escape
+
+## 移动端安全
+
+- wx_sessionkey_decrypt：微信SessionKey加解密 https://github.com/mrknow001/wx_sessionkey_decrypt
+- BurpAppletPentester：SessionKey解密插件 https://github.com/mrknow001/BurpAppletPentester
 
 ## 开源蜜罐
 
