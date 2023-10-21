@@ -555,7 +555,7 @@
 
 - CMS-Hunter：CMS漏洞测试用例集合 https://github.com/SecWiki/CMS-Hunter
 - 若依CMS https://github.com/thelostworldFree/Ruoyi-All
-
+- 通达OA：https://github.com/Fu5r0dah/TongdaScan_go
 - MYExploit：https://github.com/achuna33/MYExploit
 
 ### Payload / Bypass
@@ -581,6 +581,7 @@
 ### 内网探测
 
 - netspy：快速探测内网可达网段 https://github.com/shmilylty/netspy
+- BloodHound：域内信息收集分析 https://github.com/SpecterOps/BloodHound
 
 ### 权限维持
 
@@ -607,7 +608,7 @@
   - BypassAntiVirus2022年部分免杀复现：[Threekiii/Awesome-Redteam](https://github.com/Threekiii/Awesome-Redteam/blob/master/tips/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F-%E5%85%8D%E6%9D%80.md)
 - AV_Evasion_Tool：掩日 - 适用于红队的综合免杀工具 https://github.com/1y0n/AV_Evasion_Tool
 - shellcodeloader：Windows平台的shellcode免杀加载器 https://github.com/knownsec/shellcodeloader
-- 杀软比对：https://www.shentoushi.top/av/av.php
+- 杀软比对：tasklist/systeminfo https://www.shentoushi.top/av/av.php
 - 在线免杀：免杀方式为原生webshell随机字符修改、Java反射、垃圾字符填充、函数名称变形 http://bypass.tidesec.com/web/
 
 ### 内网穿透
@@ -628,6 +629,8 @@
 
 - 密码猜解：猜测目标可能使用的密码 https://www.hacked.com.cn/pass.html
 - Responder：实现获取NTLM Hash等功能 https://github.com/SpiderLabs/Responder
+- LaZagne：本地计算机密码 https://github.com/AlessandroZ/LaZagne
+- BrowserGhost：抓取浏览器密码 https://github.com/QAX-A-Team/BrowserGhost
 - HackBrowserData：浏览器数据导出工具 https://github.com/moonD4rk/HackBrowserData
 - Sunflower_get_Password：针对向日葵的识别码和验证码提取工具 https://github.com/wafinfo/Sunflower_get_Password
 - how-does-Xmanager-encrypt-password：Xmanager 密码解密 https://github.com/HyperSine/how-does-Xmanager-encrypt-password
