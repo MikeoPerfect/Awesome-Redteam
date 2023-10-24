@@ -81,7 +81,7 @@
     - [权限提升](#权限提升)
     - [免杀项目](#免杀项目)
     - [内网穿透](#内网穿透)
-    - [其他](#其他-1)
+    - [域内漏洞](#域内漏洞)
   - [攻击研判](#攻击研判)
     - [综合工具](#综合工具-2)
   - [逆向分析](#逆向分析)
@@ -584,12 +584,13 @@
 
 - netspy：快速探测内网可达网段 https://github.com/shmilylty/netspy
 - BloodHound：域内信息收集分析 https://github.com/SpecterOps/BloodHound
+- SharpHound：配合 BloodHound 使用 https://github.com/BloodHoundAD/SharpHound
 - Adinfo：域内信息收集 https://github.com/lzzbb/Adinfo
 
 ### 密码提取
 
 - 密码猜解：猜测目标可能使用的密码 https://www.hacked.com.cn/pass.html
-- Responder：实现获取NTLM Hash等功能 https://github.com/SpiderLabs/Responder
+- Responder：获取NTLM Hash https://github.com/SpiderLabs/Responder
 - LaZagne：本地计算机密码 https://github.com/AlessandroZ/LaZagne
 - BrowserGhost：抓取浏览器密码 https://github.com/QAX-A-Team/BrowserGhost
 - HackBrowserData：浏览器数据导出工具 https://github.com/moonD4rk/HackBrowserData
@@ -599,6 +600,8 @@
 ### 后渗透
 
 - CrackMapExec：后渗透工具 https://github.com/byt3bl33d3r/CrackMapExec
+- Impacket：https://github.com/SecureAuthCorp/impacket
+- PsTools：https://docs.microsoft.com/en-us/sysinternals/downloads/pstools
 
 ### 权限维持
 
@@ -642,10 +645,10 @@
 - dnscat2：dns隧道 https://github.com/iagox86/dnscat2
 - icmpsh：icmp隧道 https://github.com/bdamele/icmpsh
 
-### 其他
+### 域内漏洞
 
-- Impacket：https://github.com/SecureAuthCorp/impacket
-- PsTools：https://docs.microsoft.com/en-us/sysinternals/downloads/pstools
+- noPac：CVE-2021-42278 / CVE-2021-42287 https://github.com/Ridter/noPac
+- PetitPotam：NTLM Relay https://github.com/topotam/PetitPotam
 
 ## 攻击研判
 
