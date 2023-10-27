@@ -307,6 +307,7 @@
 #### 扫描/爆破工具
 
 - jwt_tool：JSON Web Token Toolkit https://github.com/ticarpi/jwt_tool
+- jwt.secrets.list：公开已知密钥列表 https://github.com/wallarm/jwt-secrets/blob/master/jwt.secrets.list
 - c-jwt-cracker：JSON Web Token Cracker https://github.com/brendan-rius/c-jwt-cracker
 - dirsearch：目录扫描/爆破 https://github.com/maurosoria/dirsearch
 - dirmap：目录扫描/爆破 https://github.com/H4ckForJob/dirmap
@@ -723,6 +724,7 @@
 - CDK：容器渗透 https://github.com/cdk-team/CDK
 - veinmind-tools：容器安全工具集 https://github.com/chaitin/veinmind-tools
 - Awesome Container Escape：容器逃逸 https://github.com/brant-ruan/awesome-container-escape
+- KubeHound：识别 Kubernetes 集群攻击路径 https://github.com/DataDog/KubeHound
 
 ## 移动端安全
 
@@ -762,6 +764,8 @@
 - Erebus：后渗透测试插件 https://github.com/DeEpinGh0st/Erebus
 - LSTAR：综合后渗透插件 https://github.com/lintstar/LSTAR
 - ElevateKit：提权插件 https://github.com/rsmudge/ElevateKit
+- C2ReverseProxy：不出网上线 https://github.com/Daybr4ak/C2ReverseProxy
+- pystinger：不出网上线 https://github.com/FunnyWolf/pystinger
 
 ### Burpsuite Extensions
 
@@ -801,7 +805,6 @@
 - FastjsonScan：Fastjson扫描器，可识别版本、依赖库、autoType状态等 https://github.com/a1phaboy/FastjsonScan
 - OA-EXPTOOL：OA综合利用工具 https://github.com/LittleBear4/OA-EXPTOOL
 - SharpHostInfo：快速探测内网主机信息工具 https://github.com/shmilylty/SharpHostInfo
-- ThunderSearch：支持Fofa、Zoomeye、360Quake的GUI界面的信息搜集工具 https://github.com/xzajyjs/ThunderSearch
 
 ## 使用姿势
 
