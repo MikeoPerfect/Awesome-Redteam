@@ -653,6 +653,10 @@
 
 ## 攻击研判
 
+### 流量分析
+
+- CobaltStrike流量解密脚本 https://github.com/5ime/CS_Decrypt
+
 ### 综合工具
 
 - BlueTeamTools：https://github.com/abc123info/BlueTeamTools
@@ -711,6 +715,7 @@
 
 - CF：云环境利用框架 https://github.com/teamssix/cf
 - aksk_tool：https://github.com/wyzxxz/aksk_tool
+- cloudTools：云资产管理工具（三大云厂商+ucloud） https://github.com/dark-kingA/cloudTools
 - aliyun-accesskey-Tools：阿里云图形化利用工具 https://github.com/mrknow001/aliyun-accesskey-Tools
 - alicloud-tools：阿里云利用工具https://github.com/iiiusky/alicloud-tools
 - oss-browser：阿里云OSS客户端 https://github.com/aliyun/oss-browser
@@ -795,7 +800,6 @@
 
 ## 先mark待测试项目
 
-- cloudTools：云资产管理工具 https://github.com/dark-kingA/cloudTools
 - tabby：https://github.com/wh1t3p1g/tabby
 - changeme：https://github.com/ztgrace/changeme
 - RouterSploit：https://github.com/threat9/routersploit
