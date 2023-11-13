@@ -650,6 +650,7 @@
 
 - noPac：CVE-2021-42278 / CVE-2021-42287 https://github.com/Ridter/noPac
 - PetitPotam：NTLM Relay https://github.com/topotam/PetitPotam
+- zerologon-Shot：https://github.com/XiaoliChan/zerologon-Shot
 
 ## 攻击研判
 
@@ -714,15 +715,16 @@
 ### AK/SK
 
 - CF：云环境利用框架 https://github.com/teamssix/cf
-- aksk_tool：https://github.com/wyzxxz/aksk_tool
-- cloudTools：云资产管理工具（三大云厂商+ucloud） https://github.com/dark-kingA/cloudTools
-- aliyun-accesskey-Tools：阿里云图形化利用工具 https://github.com/mrknow001/aliyun-accesskey-Tools
-- alicloud-tools：阿里云利用工具https://github.com/iiiusky/alicloud-tools
-- oss-browser：阿里云OSS客户端 https://github.com/aliyun/oss-browser
-- cosbrowser：腾讯云COS客户端 https://github.com/TencentCloud/cosbrowser
+- aksk_tool：三大云厂商+ucloud、AWS、京东云、七牛云 https://github.com/wyzxxz/aksk_tool
+- cloudTools：云资产管理工具，三大云厂商+ucloud https://github.com/dark-kingA/cloudTools
+- kodo-browser：七牛云对象存储官方客户端 https://github.com/qiniu/kodo-browser
+- XstorBrowser：天翼云对象存储官方客户端 https://www.ctyun.cn/document/10306929/10132519
+- oss-browser：阿里云OSS官方客户端 https://github.com/aliyun/oss-browser
+- cosbrowser：腾讯云COS官方客户端 https://github.com/TencentCloud/cosbrowser
+- cloudSec：云平台AK/SK-WEB利用工具，三大云厂商（阿里云接管k8s）、AWS、七牛云 https://github.com/libaibaia/cloudSec
+- aliyun-accesskey-Tools：阿里云 GUI https://github.com/mrknow001/aliyun-accesskey-Tools
+- alicloud-tools：阿里云 命令行 https://github.com/iiiusky/alicloud-tools
 - 行云管家：云存储图形化管理平台 https://yun.cloudbility.com/
-- kodo-browser：七牛对象存储图形化管理工具 https://github.com/qiniu/kodo-browser
-- cloudSec：云平台AK/SK-WEB利用工具 https://github.com/libaibaia/cloudSec
 
 ## 虚拟化安全
 
@@ -809,6 +811,7 @@
 - FastjsonScan：Fastjson扫描器，可识别版本、依赖库、autoType状态等 https://github.com/a1phaboy/FastjsonScan
 - OA-EXPTOOL：OA综合利用工具 https://github.com/LittleBear4/OA-EXPTOOL
 - SharpHostInfo：快速探测内网主机信息工具 https://github.com/shmilylty/SharpHostInfo
+- QueryTools：信息收集 IP/域名资产验证 https://github.com/z-bool/QueryTools
 
 ## 使用姿势
 
