@@ -201,7 +201,8 @@
 - WebShell查杀：https://n.shellpub.com/
 - HTML5 Security Cheatsheet：XSS攻击向量学习/参考 https://html5sec.org/
 - 在线代码格式标准化：http://web.chacuo.net/formatsh
-- 免费接受手机验证码：https://www.supercloudsms.com/en/ 
+- 接收手机验证码：https://www.supercloudsms.com/en/ 
+- 临时邮箱：http://24mail.chacuo.net/
 
 ### 威胁情报
 
