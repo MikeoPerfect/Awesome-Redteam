@@ -693,6 +693,10 @@
 
 - TeamsSix 云安全资源：https://github.com/teamssix/awesome-cloud-security
 - 云安全知识文库：https://wiki.teamssix.com/
+- lzCloudSecurity：云安全攻防入门
+  - Github：https://github.com/EvilAnne/lzCloudSecurity 
+  - Gitbook：https://lzcloudsecurity.gitbook.io/yun-an-quan-gong-fang-ru-men/
+
 - Awesome-CloudSec-Labs：云原生安全 https://github.com/iknowjason/Awesome-CloudSec-Labs
 - 阿里云OpenAPI：https://next.api.aliyun.com/api/
 - 云原生全景图：https://landscape.cncf.io/
