@@ -8,6 +8,7 @@
 - [重要端口及服务速查](https://github.com/Threekiii/Awesome-Redteam/blob/master/cheatsheets/%E9%87%8D%E8%A6%81%E7%AB%AF%E5%8F%A3%E5%8F%8A%E6%9C%8D%E5%8A%A1%E9%80%9F%E6%9F%A5.md)
 
 ## 目录
+
 - [Awesome-Redteam](#awesome-redteam)
   - [快速导航](#快速导航)
   - [目录](#目录)
@@ -25,7 +26,7 @@
     - [公开知识库](#公开知识库)
     - [其他](#其他)
   - [信息收集](#信息收集)
-    - [IP/域名](#ip域名)
+    - [IP/域名/子域名](#ip域名子域名)
       - [确认真实IP地址](#确认真实ip地址)
       - [多个地点Ping服务器](#多个地点ping服务器)
       - [IP反查域名](#ip反查域名)
@@ -83,6 +84,7 @@
     - [内网穿透](#内网穿透)
     - [域内漏洞](#域内漏洞)
   - [攻击研判](#攻击研判)
+    - [流量分析](#流量分析)
     - [综合工具](#综合工具-2)
   - [逆向分析](#逆向分析)
     - [靶机平台](#靶机平台-1)
@@ -111,8 +113,6 @@
     - [如何在Windows上使用alias](#如何在windows上使用alias)
     - [如何通过.bat运行conda环境下python文件](#如何通过bat运行conda环境下python文件)
     - [如何使用浏览器快速查看markdown文档](#如何使用浏览器快速查看markdown文档)
-
-
 
 
 ## 项目导航
@@ -190,11 +190,9 @@
 - 反弹Shell生成：
   - 本地部署项目 https://github.com/0dayCTF/reverse-shell-generator
   - 棱角安全在线 https://forum.ywhack.com/reverse-shell/
-
 - 文件下载命令：
   - 本地部署项目 https://github.com/r0eXpeR/File-Download-Generator
   - 棱角安全在线 https://forum.ywhack.com/bountytips.php?tools
-
 - 在线正则表达式：https://c.runoob.com/front-end/854/
 - Webshell Chop：https://webshellchop.chaitin.cn/demo/
 - XSS Chop：https://xsschop.chaitin.cn/demo/
@@ -246,7 +244,7 @@
 
 ## 信息收集
 
-### IP/域名
+### IP/域名/子域名
 
 #### 确认真实IP地址
 
@@ -265,8 +263,7 @@
 
 - IP138 https://site.ip138.com/
 - 微步在线  https://x.threatbook.cn/
-
-- VirusTotal [https://www.virustotal.com/](https://www.virustotal.com/gui/home/upload)
+- VirusTotal https://www.virustotal.com/
 
 #### Whois注册信息反查
 
@@ -696,7 +693,6 @@
 - lzCloudSecurity：云安全攻防入门
   - Github：https://github.com/EvilAnne/lzCloudSecurity 
   - Gitbook：https://lzcloudsecurity.gitbook.io/yun-an-quan-gong-fang-ru-men/
-
 - Awesome-CloudSec-Labs：云原生安全 https://github.com/iknowjason/Awesome-CloudSec-Labs
 - 阿里云OpenAPI：https://next.api.aliyun.com/api/
 - 云原生全景图：https://landscape.cncf.io/
@@ -756,9 +752,10 @@
 ### 命令行
 
 - oh my zsh：命令行工具集 https://github.com/ohmyzsh/ohmyzsh
-- Platypus：反弹shell管理  https://github.com/WangYihang/Platypus
+- clink：cmd.exe 加强版补全、历史记录和行编辑 https://github.com/chrisant996/clink
 - tabby：高度可配置终端 https://github.com/Eugeny/tabby
 - anew：命令行工具 文件合并去重 https://github.com/tomnomnom/anew
+- Platypus：反弹shell管理  https://github.com/WangYihang/Platypus
 - The art of command line：快速掌握命令行 https://github.com/jlevy/the-art-of-command-line
 
 ### Metasploit
@@ -784,6 +781,7 @@
 - HaE：高亮标记与信息提取辅助型插件 https://github.com/gh0stkey/HaE
 - Log4j2Scan：Log4j主动扫描插件 https://github.com/whwlsfb/Log4j2Scan
 - RouteVulScan：检测脆弱路径插件 https://github.com/F6JO/RouteVulScan
+- BurpCrypto：硬编码快乐渗透插件 https://github.com/whwlsfb/BurpCrypto
 
 ### Chrome Extensions
 
