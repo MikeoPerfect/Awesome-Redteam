@@ -7,6 +7,10 @@
 - [攻防渗透常用命令](https://github.com/Threekiii/Awesome-Redteam/blob/master/cheatsheets/%E6%94%BB%E9%98%B2%E6%B8%97%E9%80%8F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5.md)
 - [重要端口及服务速查](https://github.com/Threekiii/Awesome-Redteam/blob/master/cheatsheets/%E9%87%8D%E8%A6%81%E7%AB%AF%E5%8F%A3%E5%8F%8A%E6%9C%8D%E5%8A%A1%E9%80%9F%E6%9F%A5.md)
 
+## Roadmap
+
+![](images/image-20231122-2.png)
+
 ## 目录
 
 - [快速导航](#%E5%BF%AB%E9%80%9F%E5%AF%BC%E8%88%AA)
@@ -87,17 +91,21 @@
 - [逆向分析](#%E9%80%86%E5%90%91%E5%88%86%E6%9E%90)
 	- [靶机平台](#%E9%9D%B6%E6%9C%BA%E5%B9%B3%E5%8F%B0)
 	- [综合工具](#%E7%BB%BC%E5%90%88%E5%B7%A5%E5%85%B7)
-	- [小程序](#%E5%B0%8F%E7%A8%8B%E5%BA%8F)
-	- [APK](#apk)
 - [云安全](#%E4%BA%91%E5%AE%89%E5%85%A8)
 	- [云安全资源](#%E4%BA%91%E5%AE%89%E5%85%A8%E8%B5%84%E6%BA%90)
 	- [云安全矩阵](#%E4%BA%91%E5%AE%89%E5%85%A8%E7%9F%A9%E9%98%B5)
 	- [云上靶场](#%E4%BA%91%E4%B8%8A%E9%9D%B6%E5%9C%BA)
 	- [AK/SK](#aksk)
 - [虚拟化安全](#%E8%99%9A%E6%8B%9F%E5%8C%96%E5%AE%89%E5%85%A8)
+	- [容器](#%E5%AE%B9%E5%99%A8)
+	- [Kubernetes](#kubernetes)
 - [移动端安全](#%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%AE%89%E5%85%A8)
-- [开源蜜罐](#%E5%BC%80%E6%BA%90%E8%9C%9C%E7%BD%90)
-- [OPSEC](#opsec)
+	- [小程序](#%E5%B0%8F%E7%A8%8B%E5%BA%8F)
+	- [APK](#apk)
+	- [SessionKey](#sessionkey)
+- [其他方向](#%E5%85%B6%E4%BB%96%E6%96%B9%E5%90%91)
+	- [开源蜜罐](#%E5%BC%80%E6%BA%90%E8%9C%9C%E7%BD%90)
+	- [OPSEC](#opsec)
 - [必备工具](#%E5%BF%85%E5%A4%87%E5%B7%A5%E5%85%B7)
 	- [命令行](#%E5%91%BD%E4%BB%A4%E8%A1%8C)
 	- [Metasploit](#metasploit)
@@ -112,7 +120,6 @@
 	- [如何通过.bat激活conda并运行py](#%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87bat%E6%BF%80%E6%B4%BBconda%E5%B9%B6%E8%BF%90%E8%A1%8Cpy)
 	- [如何配合tabby实现高效操作](#%E5%A6%82%E4%BD%95%E9%85%8D%E5%90%88tabby%E5%AE%9E%E7%8E%B0%E9%AB%98%E6%95%88%E6%93%8D%E4%BD%9C)
 	- [如何解决cmd中文乱码](#%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3cmd%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81)
-
 ## 项目导航
 
 ### 速查文档-CheatSheets
@@ -668,19 +675,14 @@
 
 - OpenArk：Anti-Rootkit（对抗恶意程序）工具集 https://github.com/BlackINT3/OpenArk
 - 逆向分析工具集：https://pythonarsenal.com/
+- jadx：https://github.com/skylot/jadx
+- JEB：https://www.pnfsoftware.com/
+- GDA：https://github.com/charles2gan/GDA-android-reversing-Tool
 - PEiD：查壳工具 https://www.aldeid.com/wiki/PEiD
 - Py2exe：Python打包工具 https://www.py2exe.org/
 - PyInstaller：Python打包工具 https://github.com/pyinstaller/pyinstaller
-- AppInfoScanner：移动端信息收集 https://github.com/kelvinBen/AppInfoScanner
 
-### 小程序
 
-- wxappUnpacker：小程序解包 https://github.com/xuedingmiaojun/wxappUnpacker
-- CrackMinApp：反编译微信小程序 https://github.com/Cherrison/CrackMinApp  
-
-### APK
-
-- Apktool：Android apk逆向 https://github.com/iBotPeaches/Apktool
 
 ## 云安全
 
@@ -727,21 +729,40 @@
 
 ## 虚拟化安全
 
+### 容器
+
 - CDK：容器渗透 https://github.com/cdk-team/CDK
 - veinmind-tools：容器安全工具集 https://github.com/chaitin/veinmind-tools
 - Awesome Container Escape：容器逃逸 https://github.com/brant-ruan/awesome-container-escape
+
+### Kubernetes
+
 - KubeHound：识别 Kubernetes 集群攻击路径 https://github.com/DataDog/KubeHound
 
+
 ## 移动端安全
+
+### 小程序
+
+- wxappUnpacker：小程序解包 https://github.com/xuedingmiaojun/wxappUnpacker
+- CrackMinApp：反编译微信小程序 https://github.com/Cherrison/CrackMinApp  
+
+### APK
+
+- AppInfoScanner：移动端信息收集 https://github.com/kelvinBen/AppInfoScanner
+- Apktool：Android apk逆向 https://github.com/iBotPeaches/Apktool
+
+### SessionKey
 
 - wx_sessionkey_decrypt：微信SessionKey加解密 https://github.com/mrknow001/wx_sessionkey_decrypt
 - BurpAppletPentester：SessionKey解密插件 https://github.com/mrknow001/BurpAppletPentester
 
-## 开源蜜罐
+## 其他方向
+### 开源蜜罐
 
 - HFish：一款安全、简单可信赖的跨平台蜜罐软件，允许商业和个人用户免费使用 https://github.com/hacklcx/HFish
 
-## OPSEC
+### OPSEC
 
 - OPSEC-Tradecraft：https://github.com/WesleyWong420/OPSEC-Tradecraft
 
