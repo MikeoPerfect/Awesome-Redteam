@@ -9,111 +9,109 @@
 
 ## 目录
 
-- [Awesome-Redteam](#awesome-redteam)
-  - [快速导航](#快速导航)
-  - [目录](#目录)
-  - [项目导航](#项目导航)
-    - [速查文档-CheatSheets](#速查文档-cheatsheets)
-    - [一些代码-Scripts](#一些代码-scripts)
-    - [攻防知识-Tips](#攻防知识-tips)
-    - [云安全-Cloud](#云安全-cloud)
-  - [开源导航](#开源导航)
-    - [编解码/加解密综合](#编解码加解密综合)
-    - [常见编解码/加解密](#常见编解码加解密)
-    - [实用工具](#实用工具)
-    - [威胁情报](#威胁情报)
-    - [网络空间搜索](#网络空间搜索)
-    - [公开知识库](#公开知识库)
-    - [其他](#其他)
-  - [信息收集](#信息收集)
-    - [IP/域名/子域名](#ip域名子域名)
-      - [确认真实IP地址](#确认真实ip地址)
-      - [多个地点Ping服务器](#多个地点ping服务器)
-      - [IP反查域名](#ip反查域名)
-      - [Whois注册信息反查](#whois注册信息反查)
-      - [DNS数据聚合查询](#dns数据聚合查询)
-      - [TLS证书信息查询](#tls证书信息查询)
-      - [IP地址段收集](#ip地址段收集)
-    - [指纹识别](#指纹识别)
-    - [扫描/爆破](#扫描爆破)
-      - [扫描/爆破工具](#扫描爆破工具)
-      - [扫描/爆破字典](#扫描爆破字典)
-      - [字典生成](#字典生成)
-      - [默认口令查询](#默认口令查询)
-    - [社会工程学](#社会工程学)
-    - [公众号/小程序](#公众号小程序)
-    - [浏览器](#浏览器)
-    - [综合工具](#综合工具)
-  - [漏洞研究](#漏洞研究)
-    - [开源资源](#开源资源)
-    - [靶机平台](#靶机平台)
-  - [漏洞扫描](#漏洞扫描)
-    - [POC库](#poc库)
-    - [POC编写](#poc编写)
-    - [综合工具](#综合工具-1)
-  - [漏洞利用](#漏洞利用)
-    - [辅助工具](#辅助工具)
-    - [数据库](#数据库)
-    - [信息泄露](#信息泄露)
-    - [操作系统](#操作系统)
-    - [Druid](#druid)
-    - [Etcd](#etcd)
-    - [Nacos](#nacos)
-    - [Nps](#nps)
-    - [Java](#java)
-    - [Redis](#redis)
-    - [Shiro](#shiro)
-    - [Struts](#struts)
-    - [Spring](#spring)
-    - [Tomcat](#tomcat)
-    - [Thinkphp](#thinkphp)
-    - [Weblogic](#weblogic)
-    - [vSphere](#vsphere)
-    - [Zookeeper](#zookeeper)
-    - [CMS / OA](#cms--oa)
-    - [Payload / Bypass](#payload--bypass)
-  - [渗透测试](#渗透测试)
-    - [403绕过](#403绕过)
-  - [内网渗透](#内网渗透)
-    - [内网探测](#内网探测)
-    - [密码提取](#密码提取)
-    - [后渗透](#后渗透)
-    - [权限维持](#权限维持)
-    - [权限提升](#权限提升)
-    - [免杀项目](#免杀项目)
-    - [内网穿透](#内网穿透)
-    - [域内漏洞](#域内漏洞)
-  - [攻击研判](#攻击研判)
-    - [流量分析](#流量分析)
-    - [综合工具](#综合工具-2)
-  - [逆向分析](#逆向分析)
-    - [靶机平台](#靶机平台-1)
-    - [综合工具](#综合工具-3)
-    - [小程序](#小程序)
-    - [APK](#apk)
-  - [云安全](#云安全)
-    - [云安全资源](#云安全资源)
-    - [云安全矩阵](#云安全矩阵)
-    - [云上靶场](#云上靶场)
-    - [AK/SK](#aksk)
-  - [虚拟化安全](#虚拟化安全)
-  - [移动端安全](#移动端安全)
-  - [开源蜜罐](#开源蜜罐)
-  - [OPSEC](#opsec)
-  - [必备工具](#必备工具)
-    - [命令行](#命令行)
-    - [Metasploit](#metasploit)
-    - [Yakit](#yakit)
-    - [Cobaltstrike Extensions](#cobaltstrike-extensions)
-    - [Burpsuite Extensions](#burpsuite-extensions)
-    - [Chrome Extensions](#chrome-extensions)
-  - [其他优秀项目](#其他优秀项目)
-  - [先mark待测试项目](#先mark待测试项目)
-  - [使用姿势](#使用姿势)
-    - [如何在Windows上使用alias](#如何在windows上使用alias)
-    - [如何通过.bat运行conda环境下python文件](#如何通过bat运行conda环境下python文件)
-    - [如何使用浏览器快速查看markdown文档](#如何使用浏览器快速查看markdown文档)
-
+- [快速导航](#%E5%BF%AB%E9%80%9F%E5%AF%BC%E8%88%AA)
+- [目录](#%E7%9B%AE%E5%BD%95)
+- [项目导航](#%E9%A1%B9%E7%9B%AE%E5%AF%BC%E8%88%AA)
+	- [速查文档-CheatSheets](#%E9%80%9F%E6%9F%A5%E6%96%87%E6%A1%A3-cheatsheets)
+	- [一些代码-Scripts](#%E4%B8%80%E4%BA%9B%E4%BB%A3%E7%A0%81-scripts)
+	- [攻防知识-Tips](#%E6%94%BB%E9%98%B2%E7%9F%A5%E8%AF%86-tips)
+	- [云安全-Cloud](#%E4%BA%91%E5%AE%89%E5%85%A8-cloud)
+- [开源导航](#%E5%BC%80%E6%BA%90%E5%AF%BC%E8%88%AA)
+	- [编解码/加解密综合](#%E7%BC%96%E8%A7%A3%E7%A0%81%E5%8A%A0%E8%A7%A3%E5%AF%86%E7%BB%BC%E5%90%88)
+	- [常见编解码/加解密](#%E5%B8%B8%E8%A7%81%E7%BC%96%E8%A7%A3%E7%A0%81%E5%8A%A0%E8%A7%A3%E5%AF%86)
+	- [实用工具](#%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7)
+	- [威胁情报](#%E5%A8%81%E8%83%81%E6%83%85%E6%8A%A5)
+	- [网络空间搜索](#%E7%BD%91%E7%BB%9C%E7%A9%BA%E9%97%B4%E6%90%9C%E7%B4%A2)
+	- [公开知识库](#%E5%85%AC%E5%BC%80%E7%9F%A5%E8%AF%86%E5%BA%93)
+	- [其他](#%E5%85%B6%E4%BB%96)
+- [信息收集](#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86)
+	- [IP/域名/子域名](#ip%E5%9F%9F%E5%90%8D%E5%AD%90%E5%9F%9F%E5%90%8D)
+		- [确认真实IP地址](#%E7%A1%AE%E8%AE%A4%E7%9C%9F%E5%AE%9Eip%E5%9C%B0%E5%9D%80)
+		- [多个地点Ping服务器](#%E5%A4%9A%E4%B8%AA%E5%9C%B0%E7%82%B9ping%E6%9C%8D%E5%8A%A1%E5%99%A8)
+		- [IP反查域名](#ip%E5%8F%8D%E6%9F%A5%E5%9F%9F%E5%90%8D)
+		- [Whois注册信息反查](#whois%E6%B3%A8%E5%86%8C%E4%BF%A1%E6%81%AF%E5%8F%8D%E6%9F%A5)
+		- [DNS数据聚合查询](#dns%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E6%9F%A5%E8%AF%A2)
+		- [TLS证书信息查询](#tls%E8%AF%81%E4%B9%A6%E4%BF%A1%E6%81%AF%E6%9F%A5%E8%AF%A2)
+		- [IP地址段收集](#ip%E5%9C%B0%E5%9D%80%E6%AE%B5%E6%94%B6%E9%9B%86)
+	- [指纹识别](#%E6%8C%87%E7%BA%B9%E8%AF%86%E5%88%AB)
+	- [扫描/爆破](#%E6%89%AB%E6%8F%8F%E7%88%86%E7%A0%B4)
+		- [扫描/爆破工具](#%E6%89%AB%E6%8F%8F%E7%88%86%E7%A0%B4%E5%B7%A5%E5%85%B7)
+		- [扫描/爆破字典](#%E6%89%AB%E6%8F%8F%E7%88%86%E7%A0%B4%E5%AD%97%E5%85%B8)
+		- [字典生成](#%E5%AD%97%E5%85%B8%E7%94%9F%E6%88%90)
+		- [默认口令查询](#%E9%BB%98%E8%AE%A4%E5%8F%A3%E4%BB%A4%E6%9F%A5%E8%AF%A2)
+	- [社会工程学](#%E7%A4%BE%E4%BC%9A%E5%B7%A5%E7%A8%8B%E5%AD%A6)
+	- [公众号/小程序](#%E5%85%AC%E4%BC%97%E5%8F%B7%E5%B0%8F%E7%A8%8B%E5%BA%8F)
+	- [浏览器](#%E6%B5%8F%E8%A7%88%E5%99%A8)
+	- [综合工具](#%E7%BB%BC%E5%90%88%E5%B7%A5%E5%85%B7)
+- [漏洞研究](#%E6%BC%8F%E6%B4%9E%E7%A0%94%E7%A9%B6)
+	- [开源资源](#%E5%BC%80%E6%BA%90%E8%B5%84%E6%BA%90)
+	- [靶机平台](#%E9%9D%B6%E6%9C%BA%E5%B9%B3%E5%8F%B0)
+- [漏洞扫描](#%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F)
+	- [POC库](#poc%E5%BA%93)
+	- [POC编写](#poc%E7%BC%96%E5%86%99)
+	- [综合工具](#%E7%BB%BC%E5%90%88%E5%B7%A5%E5%85%B7)
+- [漏洞利用](#%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8)
+	- [辅助工具](#%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7)
+	- [数据库](#%E6%95%B0%E6%8D%AE%E5%BA%93)
+	- [信息泄露](#%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2)
+	- [Druid](#druid)
+	- [Etcd](#etcd)
+	- [Nacos](#nacos)
+	- [Nps](#nps)
+	- [Java](#java)
+	- [Redis](#redis)
+	- [Shiro](#shiro)
+	- [Struts](#struts)
+	- [Spring](#spring)
+	- [Tomcat](#tomcat)
+	- [Thinkphp](#thinkphp)
+	- [Weblogic](#weblogic)
+	- [vSphere](#vsphere)
+	- [Zookeeper](#zookeeper)
+	- [CMS / OA](#cms--oa)
+	- [Payload / Bypass](#payload--bypass)
+- [渗透测试](#%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95)
+	- [403绕过](#403%E7%BB%95%E8%BF%87)
+- [内网渗透](#%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F)
+	- [内网探测](#%E5%86%85%E7%BD%91%E6%8E%A2%E6%B5%8B)
+	- [密码提取](#%E5%AF%86%E7%A0%81%E6%8F%90%E5%8F%96)
+	- [后渗透](#%E5%90%8E%E6%B8%97%E9%80%8F)
+	- [权限维持](#%E6%9D%83%E9%99%90%E7%BB%B4%E6%8C%81)
+	- [权限提升](#%E6%9D%83%E9%99%90%E6%8F%90%E5%8D%87)
+	- [免杀项目](#%E5%85%8D%E6%9D%80%E9%A1%B9%E7%9B%AE)
+	- [内网穿透](#%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F)
+	- [域内漏洞](#%E5%9F%9F%E5%86%85%E6%BC%8F%E6%B4%9E)
+- [攻击研判](#%E6%94%BB%E5%87%BB%E7%A0%94%E5%88%A4)
+	- [流量分析](#%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90)
+	- [综合工具](#%E7%BB%BC%E5%90%88%E5%B7%A5%E5%85%B7)
+- [逆向分析](#%E9%80%86%E5%90%91%E5%88%86%E6%9E%90)
+	- [靶机平台](#%E9%9D%B6%E6%9C%BA%E5%B9%B3%E5%8F%B0)
+	- [综合工具](#%E7%BB%BC%E5%90%88%E5%B7%A5%E5%85%B7)
+	- [小程序](#%E5%B0%8F%E7%A8%8B%E5%BA%8F)
+	- [APK](#apk)
+- [云安全](#%E4%BA%91%E5%AE%89%E5%85%A8)
+	- [云安全资源](#%E4%BA%91%E5%AE%89%E5%85%A8%E8%B5%84%E6%BA%90)
+	- [云安全矩阵](#%E4%BA%91%E5%AE%89%E5%85%A8%E7%9F%A9%E9%98%B5)
+	- [云上靶场](#%E4%BA%91%E4%B8%8A%E9%9D%B6%E5%9C%BA)
+	- [AK/SK](#aksk)
+- [虚拟化安全](#%E8%99%9A%E6%8B%9F%E5%8C%96%E5%AE%89%E5%85%A8)
+- [移动端安全](#%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%AE%89%E5%85%A8)
+- [开源蜜罐](#%E5%BC%80%E6%BA%90%E8%9C%9C%E7%BD%90)
+- [OPSEC](#opsec)
+- [必备工具](#%E5%BF%85%E5%A4%87%E5%B7%A5%E5%85%B7)
+	- [命令行](#%E5%91%BD%E4%BB%A4%E8%A1%8C)
+	- [Metasploit](#metasploit)
+	- [Yakit](#yakit)
+	- [Cobaltstrike Extensions](#cobaltstrike-extensions)
+	- [Burpsuite Extensions](#burpsuite-extensions)
+	- [Chrome Extensions](#chrome-extensions)
+- [其他优秀项目](#%E5%85%B6%E4%BB%96%E4%BC%98%E7%A7%80%E9%A1%B9%E7%9B%AE)
+- [先mark待测试项目](#%E5%85%88mark%E5%BE%85%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE)
+- [提高生产力的使用姿势](#%E6%8F%90%E9%AB%98%E7%94%9F%E4%BA%A7%E5%8A%9B%E7%9A%84%E4%BD%BF%E7%94%A8%E5%A7%BF%E5%8A%BF)
+	- [如何通过.bat使用alias](#%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87bat%E4%BD%BF%E7%94%A8alias)
+	- [如何通过.bat激活conda并运行py](#%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87bat%E6%BF%80%E6%B4%BBconda%E5%B9%B6%E8%BF%90%E8%A1%8Cpy)
+	- [如何配合tabby实现高效操作](#%E5%A6%82%E4%BD%95%E9%85%8D%E5%90%88tabby%E5%AE%9E%E7%8E%B0%E9%AB%98%E6%95%88%E6%93%8D%E4%BD%9C)
+	- [如何解决cmd中文乱码](#%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3cmd%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81)
 
 ## 项目导航
 
@@ -201,6 +199,7 @@
 - 在线代码格式标准化：http://web.chacuo.net/formatsh
 - 接收手机验证码：https://www.supercloudsms.com/en/ 
 - 临时邮箱：http://24mail.chacuo.net/
+- 短链接生成：https://a.f8x.io/
 
 ### 威胁情报
 
@@ -462,14 +461,6 @@
 - ds_store_exp：.DS_Store 文件泄漏利用脚本 https://github.com/lijiejie/ds_store_exp
 - Hawkeye：GitHub 泄露监控系统 https://github.com/0xbug/Hawkeye 
 
-### 操作系统
-
-- Windows-Exploit-Suggester：https://github.com/AonCyberLabs/Windows-Exploit-Suggester
-- Linux_Exploit_Suggester：https://github.com/The-Z-Labs/linux-exploit-suggester
-- Linux_Exploit_Suggester：https://github.com/InteliSecureLabs/Linux_Exploit_Suggester
-- windows-kernel-exploits：提权漏洞集合 https://github.com/SecWiki/windows-kernel-exploits
-- Windows Elevation：https://github.com/Al1ex/WindowsElevation
-
 ### Druid
 
 - DruidCrack：Druid密文解密工具 https://github.com/rabbitmask/DruidCrack
@@ -617,7 +608,13 @@
 
 ### 权限提升
 
+- Windows-Exploit-Suggester：https://github.com/AonCyberLabs/Windows-Exploit-Suggester
+- Linux_Exploit_Suggester：https://github.com/The-Z-Labs/linux-exploit-suggester
+- Linux_Exploit_Suggester：https://github.com/InteliSecureLabs/Linux_Exploit_Suggester
+- windows-kernel-exploits：提权漏洞集合 https://github.com/SecWiki/windows-kernel-exploits
+- Windows Elevation：https://github.com/Al1ex/WindowsElevation
 - Databasetools：数据库自动化提权工具 https://github.com/Hel10-Web/Databasetools
+- 在线windows辅助提权：https://i.hacking8.com/tiquan/
 
 ### 免杀项目
 
@@ -627,7 +624,8 @@
   - BypassAntiVirus2022年部分免杀复现：[Threekiii/Awesome-Redteam](https://github.com/Threekiii/Awesome-Redteam/blob/master/tips/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F-%E5%85%8D%E6%9D%80.md)
 - AV_Evasion_Tool：掩日 - 适用于红队的综合免杀工具 https://github.com/1y0n/AV_Evasion_Tool
 - shellcodeloader：Windows平台的shellcode免杀加载器 https://github.com/knownsec/shellcodeloader
-- 杀软比对：tasklist/systeminfo https://www.shentoushi.top/av/av.php
+- 杀软比对1：tasklist/systeminfo https://www.shentoushi.top/av/av.php
+- 杀软比对2：### tasklist /svc && ps -aux https://tasklist.ffffffff0x.com/
 - 在线免杀：免杀方式为原生webshell随机字符修改、Java反射、垃圾字符填充、函数名称变形 http://bypass.tidesec.com/web/
 
 ### 内网穿透
@@ -796,6 +794,7 @@
 - anti-honeypot：蜜罐识别 https://github.com/cnrstar/anti-honeypot
 - immersive-translate：翻译插件 https://github.com/immersive-translate/immersive-translate/
 - json-formatter：Json格式化插件 https://github.com/callumlocke/json-formatter
+- markdown-viewer：在浏览器查看markdown文档 https://github.com/simov/markdown-viewer
 
 ## 其他优秀项目
 
@@ -816,35 +815,31 @@
 - SharpHostInfo：快速探测内网主机信息工具 https://github.com/shmilylty/SharpHostInfo
 - QueryTools：信息收集 IP/域名资产验证 https://github.com/z-bool/QueryTools
 
-## 使用姿势
+## 提高生产力的使用姿势
 
-### 如何在Windows上使用alias
+### 如何通过.bat使用alias
 
-- 创建alias.bat，文件内容如下。
+- 创建alias.bat，实现查看md文档、运行exe程序、激活conda环境等功能。文件内容示例：
 
 ```
 @echo off
 ::Tips
-@DOSKEY httpcode=type "D:\Hack Tools\Tips\http_status_code.md"
-@DOSKEY versions=type "D:\Hack Tools\Tips\versions.md"
-@DOSKEY owasp=type "D:\Hack Tools\Tips\owasp.md"
+@DOSKEY httpcode=type "D:\HackTools\Tips\http_status_code.md"
+
+::Software
+@DOSKEY ida64=activate base$t"D:\Software\CTFTools\Cracking\IDA_7.7\ida64.exe"
+
+::Tools
+@DOSKEY fscan=cd /d D:\Software\HackTools\fscan$tactivate security$tdir
 ```
 
 - 注册表打开`计算机\HKEY_CURRENT_USER\Software\Microsoft\Command Processor`。
 - 创建字符串值`autorun`，赋值为alias.bat所在位置，例如`D:\Software\alias.bat`。
 - 双击alias.bat运行，重启cmd。
-- 此时在终端输入httpcode，即可返回文件内容。
 
-![image-20220208090022459](./images/202205131147745.png)
+### 如何通过.bat激活conda并运行py
 
-> 解决cmd中文乱码的问题：
->
-> 1. 注册表打开`计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor`。
-> 2. 创建字符串值`autorun`，赋值为`chcp 65001`。
-
-### 如何通过.bat运行conda环境下python文件
-
-run.bat
+- run.bat
 
 ```
 call D:\YOUR_PATH\Anaconda\Scripts\activate.bat D:\YOUR_PATH\Anaconda\
@@ -854,9 +849,20 @@ python YOUR_PYTHON_FILE.py
 pause
 ```
 
-### 如何使用浏览器快速查看markdown文档
+### 如何配合tabby实现高效操作
 
-- 安装插件`Markdown Viewer`。
-- 配合Bootstrap可以实现快速部署导航页或文档库。
+- 安装tabby：https://github.com/Eugeny/tabby
 
-![image-20220519182738441](./images/202205191827578.png)
+- 可以通过tabby实现自定义shell配置，包括但不限于：
+	- vps ssh/ftp/sftp
+	- 自动补全命令（clink）
+	- 快速打开工作区
+	- 存储输出日志
+	- ...
+
+![](images/image-20231122-1.png)
+
+### 如何解决cmd中文乱码
+
+- 注册表打开`计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor`。
+- 创建字符串值`autorun`，赋值为`chcp 65001`。
