@@ -342,6 +342,9 @@
 - Weakpass：在线子域名生成工具部署 https://github.com/zzzteph/probable_subdomains
 - pydictor：一个强大实用的黑客暴力破解字典建立工具 https://github.com/LandGrey/pydictor/
 - 汉字转拼音：https://www.aies.cn/pinyin.htm
+- crunch
+	- Kali/Linux：https://sourceforge.net/projects/crunch-wordlist
+	- Windows：https://github.com/shadwork/Windows-Crunch
 
 #### 默认口令查询
 
@@ -593,6 +596,9 @@
 - HackBrowserData：浏览器数据导出工具 https://github.com/moonD4rk/HackBrowserData
 - Sunflower_get_Password：针对向日葵的识别码和验证码提取工具 https://github.com/wafinfo/Sunflower_get_Password
 - how-does-Xmanager-encrypt-password：Xmanager 密码解密 https://github.com/HyperSine/how-does-Xmanager-encrypt-password
+- SharpXDecrypt：Xshell全版本密码恢复 https://github.com/JDArmy/SharpXDecrypt
+- navicat_password_decrypt：Navicat 密码恢复 注册表 or .ncx https://github.com/Zhuoyuan1/navicat_password_decrypt
+- firefox_decrypt：Firefox 密码提取 https://github.com/unode/firefox_decrypt
 
 ### 后渗透
 
@@ -754,13 +760,16 @@
 
 ### SessionKey
 
-- wx_sessionkey_decrypt：微信SessionKey加解密 https://github.com/mrknow001/wx_sessionkey_decrypt
+- wx_sessionkey_decrypt：wechat SessionKey加解密 https://github.com/mrknow001/wx_sessionkey_decrypt
 - BurpAppletPentester：SessionKey解密插件 https://github.com/mrknow001/BurpAppletPentester
 
 ## 其他方向
 ### 开源蜜罐
 
+- awesome-honeypots：开源蜜罐列表 https://github.com/paralax/awesome-honeypots
 - HFish：一款安全、简单可信赖的跨平台蜜罐软件，允许商业和个人用户免费使用 https://github.com/hacklcx/HFish
+- conpot：ICS（工业控制系统）蜜罐 https://github.com/mushorg/conpot
+- MysqlHoneypot：MySQL蜜罐 获取wechat ID https://github.com/qigpig/MysqlHoneypot
 
 ### OPSEC
 
