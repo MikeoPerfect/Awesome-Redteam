@@ -143,8 +143,9 @@
 - runtime-exec-payloads.html：java.lang.Runtime.exec() Payloads生成 
 - Ascii2Char：ASCII码和字符互相转换脚本 修改webshell文件名密码 
 - Weakpass_Generator：在线弱密码生成工具 汉化版
-- Godzilla_Decryptor：哥斯拉流量解密脚本
-- Flask_Session_Decryptor：Flask session注入解密脚本
+- Godzilla_Decryptor：哥斯拉流量解密
+- Behinder4_Key_Bruteforce：冰蝎4密钥爆破
+- Flask_Session_Decryptor：Flask session注入解密
 
 ### 攻防知识-Tips
 
@@ -234,6 +235,8 @@
 - 谛听：https://www.ditecting.com/
 - 360网络空间测绘：https://quake.360.cn/quake/#/index
 - Google Hacking Database：https://www.exploit-db.com/google-hacking-database
+- Google Dork：https://cxsecurity.com/dorks/
+- GitDorker：https://github.com/obheda12/GitDorker
 
 ### 公开知识库
 
@@ -307,6 +310,7 @@
 - 云悉指纹识别：http://www.yunsee.cn/
 - identYwaf：WAF识别工具 https://github.com/stamparm/identYwaf
 
+
 ### 扫描/爆破
 
 #### 扫描/爆破工具
@@ -362,12 +366,21 @@
 
 ### 社会工程学
 
-- Hunter：Chrome插件 查找网页暴露邮箱 https://hunter.io/chrome
-- Phonebook：邮箱地址搜索 https://phonebook.cz
-- Skymem：邮箱地址搜索 https://www.skymem.info/
-- 搜邮箱：邮箱域名搜索 https://souyouxiang.com/find-contact/
+#### 邮箱
+
+- Snov.io：https://app.snov.io
+- Phonebook：also works on subdomains and urls https://phonebook.cz 
+- Skymem：https://www.skymem.info
+- Hunter：https://hunter.io
+- email-format：https://www.email-format.com/i/search/
+- 搜邮箱：https://souyouxiang.com/find-contact/
+- theHarvester：also works on subdomains https://github.com/laramies/theHarvester
+
+#### 钓鱼
+
 - gophish：钓鱼邮件 https://github.com/gophish/gophish
-- SpoofWeb：一键部署HTTPS钓鱼网站 https://github.com/5icorgi/SpoofWeb
+- SpoofWeb：一键部署 https 钓鱼网站 https://github.com/5icorgi/SpoofWeb
+
 
 ### 公众号/小程序
 
