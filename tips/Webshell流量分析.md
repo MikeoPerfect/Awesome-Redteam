@@ -173,7 +173,7 @@ else
 #### 流量特征
 
 - 密文传输。
-- **Response响应包的Content Length为16。**
+- Response响应包的Content Length为16。
 
 #### 流量解密
 
@@ -243,6 +243,174 @@ session_start();
 
 ![img](images/Webshell流量分析/202211091045328.png)
 
+### Behinder 冰蝎4
+
+#### 基础代码
+
+冰蝎 4 内置传输协议：
+- default_xor
+- default_xor_base64
+- default_aes
+- default_image
+- default_json
+- aes_with_magic
+
+default aes 加密函数：
+
+```java
+    private byte[] Encrypt(byte[] data) throws Exception
+    {
+        String key="e45e329feb5d925b";
+        byte[] raw = key.getBytes("utf-8");
+        javax.crypto.spec.SecretKeySpec skeySpec = new javax.crypto.spec.SecretKeySpec(raw, "AES");
+        javax.crypto.Cipher cipher =javax.crypto.Cipher.getInstance("AES/ECB/PKCS5Padding");// "算法/模式/补码方式"
+        cipher.init(javax.crypto.Cipher.ENCRYPT_MODE, skeySpec);
+        byte[] encrypted = cipher.doFinal(data);
+        Class baseCls;
+        try
+        {
+            baseCls=Class.forName("java.util.Base64");
+            Object Encoder=baseCls.getMethod("getEncoder", null).invoke(baseCls, null);
+            encrypted= (byte[]) Encoder.getClass().getMethod("encode", new Class[]{byte[].class}).invoke(Encoder, new Object[]{encrypted});
+        }
+        catch (Throwable error)
+        {
+            baseCls=Class.forName("sun.misc.BASE64Encoder");
+            Object Encoder=baseCls.newInstance();
+            String result=(String) Encoder.getClass().getMethod("encode",new Class[]{byte[].class}).invoke(Encoder, new Object[]{encrypted});
+            result=result.replace("\n", "").replace("\r", "");
+            encrypted=result.getBytes();
+        }
+        return encrypted;
+    }
+```
+
+default aes 解密函数：
+
+```java
+    private byte[] Decrypt(byte[] data) throws Exception
+    {
+        String k="e45e329feb5d925b";
+        javax.crypto.Cipher c=javax.crypto.Cipher.getInstance("AES/ECB/PKCS5Padding");c.init(2,new javax.crypto.spec.SecretKeySpec(k.getBytes(),"AES"));
+        byte[] decodebs;
+        Class baseCls ;
+                try{
+                    baseCls=Class.forName("java.util.Base64");
+                    Object Decoder=baseCls.getMethod("getDecoder", null).invoke(baseCls, null);
+                    decodebs=(byte[]) Decoder.getClass().getMethod("decode", new Class[]{byte[].class}).invoke(Decoder, new Object[]{data});
+                }
+                catch (Throwable e)
+                {
+                    baseCls = Class.forName("sun.misc.BASE64Decoder");
+                    Object Decoder=baseCls.newInstance();
+                    decodebs=(byte[]) Decoder.getClass().getMethod("decodeBuffer",new Class[]{String.class}).invoke(Decoder, new Object[]{new String(data)});
+
+                }
+        return c.doFinal(decodebs);
+
+    }
+```
+
+#### 流量特征
+
+1. Accept 字段
+```
+Accept: application/json, text/javascript, _/_; q=0.01
+```
+
+2. Content-Type 字段
+```
+PHP：Application/x-www-form-urlencoded  
+ASP：Application/octet-stream
+```
+
+3. User-Agent 字段：内置了 10 种 User-Agent，每次连接 shell 时会随机选择一个进行使用。
+```
+"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36",
+"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:87.0) Gecko/20100101 Firefox/87.0",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36 Edg/99.0.1150.55",
+"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0",
+"Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36",
+"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36",
+"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:79.0) Gecko/20100101 Firefox/79.0",
+"Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko"
+```
+
+4. Connection 字段：`Keep-Alive`
+```
+Connection: Keep-Alive
+```
+
+5. Cookie 字段：`PHPSESSID=xxx`
+```
+Cookie: PHPSESSID=hslqlp72irgjae6hcdgb2tcb9k
+```
+
+#### 流量解密
+
+爆破 key 及解密脚本：
+
+keys.txt be like：
+
+```
+pass
+pass1024
+rebeyond
+123456
+just a few examples, please put your own dict here.
+```
+
+```python
+# -*- coding: utf-8 -*-  
+# @Author  : Threekiii  
+# @Time    : 2023/11/29 18:07  
+# @Function: Brute Force of Behinder4 secret key  
+  
+import base64  
+import hashlib  
+from Crypto.Cipher import AES  
+  
+  
+def aes_decode(data, key):  
+    try:  
+        aes = AES.new(str.encode(key), AES.MODE_ECB)  
+        decrypted_text = aes.decrypt(data)  
+        decrypted_text = decrypted_text[:-(decrypted_text[-1])]  
+    except Exception as e:  
+        print(e)  
+    else:  
+        return decrypted_text.decode()  
+  
+def base64_decode(data):  
+    res = base64.b64decode(data.strip()).decode()  
+    print(res)  
+    return res  
+  
+def md5_truncate(key):  
+    return hashlib.md5(key.encode()).hexdigest()[:16]  
+  
+if __name__ == '__main__':  
+    data = '''  
+	<BASE64_ENCRYPTED_DATA_HERE>  
+   '''    with open('keys.txt','r',encoding='utf-8') as f:  
+        keys = f.readlines()  
+  
+    for key in keys:  
+        key = key.strip()  
+        c2_key = md5_truncate(key)  
+        print('[CURRENT KEY]\t{} {}'.format(key,c2_key))  
+        try:  
+            data_b64_decode = base64.b64decode(data.strip())  
+            data_aes_decode = aes_decode(data_b64_decode, c2_key)  
+            if data_aes_decode:  
+                print('[Ooooops, We found it!]')  
+                print(data_aes_decode)  
+                break  
+        except:  
+            pass
+```
 ### Godzilla 哥斯拉
 
 #### 基础代码
