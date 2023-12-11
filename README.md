@@ -153,6 +153,7 @@
 
 - 内网渗透-免杀
 - 内网渗透-隐藏
+- 信息收集-敏感信息收集
 - 逆向分析-微信小程序反编译
 - 社会工程学-钓鱼邮件主题汇总
 - 服务搭建-DNS Log平台搭建
@@ -234,9 +235,12 @@
 - 鹰图：https://hunter.qianxin.com/
 - 谛听：https://www.ditecting.com/
 - 360网络空间测绘：https://quake.360.cn/quake/#/index
-- Google Hacking Database：https://www.exploit-db.com/google-hacking-database
+- Google Hacking：
+	- https://www.exploit-db.com/google-hacking-database
+	- https://pentest-tools.com/information-gathering/google-hacking
 - Google Dork：https://cxsecurity.com/dorks/
 - GitDorker：https://github.com/obheda12/GitDorker
+- OSINT Framework：开源信息收集框架 https://osintframework.com/
 
 ### 公开知识库
 
@@ -251,6 +255,7 @@
 ### 其他
 
 - Wayback Machine：网页历史缓存 https://archive.org/web
+
 
 ## 信息收集
 
@@ -799,6 +804,11 @@
 - anew：命令行工具 文件合并去重 https://github.com/tomnomnom/anew
 - Platypus：反弹shell管理  https://github.com/WangYihang/Platypus
 - The art of command line：快速掌握命令行 https://github.com/jlevy/the-art-of-command-line
+- linux命令行提示工具：
+	- https://github.com/jaywcjlove/linux-command online版
+	- https://github.com/chenjiandongx/pls golang版
+	- https://github.com/chenjiandongx/how python版
+
 
 ### Metasploit
 

